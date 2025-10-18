@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', 'Montserrat', sans-serif, 'Inter';
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* stops sideways scrolling */
+}
+#home{
+height: 100vh;
+width: 100%;
+background: linear-gradient(rgba(2, 48, 5, 0.77)), url("../assets/homepage.jpg") ;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+}
+#home .header{
+display: flex;
+gap: 62%;
+}
+#home .portfolio{
+color: #ffffffd2;
+font-family:Arial;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+letter-spacing: 0.20px;
+margin-left: 15px;
+margin-top: 10px;
+}
+#home .nav ul{
+display: inline-flex;
+gap: 36px;
+margin-top: 10px;
+}
+#home ul li{
+list-style: none;
+}
+#home .nav ul li a{
+text-decoration: none;
+color: #fffdfdd3;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.29px;
+gap: 33px;
+}
+#home .nav ul li a:hover{
+color: #0180ff;
+}
+#home .main{
+color: #04aaecfa;
+text-align: center;
+font-family: arial;
+font-size: 59px;
+font-style: normal;
+font-weight: 540;
+line-height: 153%; /* 90.27px */
+letter-spacing: 0.59px;
+margin: 210px 300px 0px 300px;
+}
+#home .webdev{
+ color: #0de07aee;
+font-family: arial;
+font-size: 52px;
+font-style: normal;
+font-weight: 540;
+line-height: 153%;
+letter-spacing: 0.52px;
+margin: 0px 0px 0px 475px;
+}
+#home .vm{
+ margin: 15px 620px 0px 610px;
+ color: #ffffffd4;
+font-family: Montserrat;
+font-size: 35px;
+padding: 10px 25px;
+background: transparent;
+border:solid #ffffffd4;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s;
+}
+#home .vm:hover {
+  background: #ffffffd4;
+  color: #1d235c;
+}
+#skill{
+height: 100vh;
+width: 100%;
+background: linear-gradient(rgba(2, 48, 5, 0.77)), url("../assets/skills.jpg") no-repeat center center/cover;
+}
+#skill .header1{
+    color: white;
+    font-family: arial;
+    font-size: 45px;    
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.60px;
+    margin-left: 20%;
+    padding: 50px 15px;
+}
+#skill .cpp{
+    display: flex;
+    gap: 9.8%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+#skill .para{
+    color: rgba(255, 255, 255, 0.892);
+    font-family: arial;
+    font-size: 23px;    
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.20px;
+    margin-left: 40px;
+    padding: 10px 15px;
+    height: 150px;
+    width: 860px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 22px;
+}
+#skill .figma{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+}
+#skill .para2{
+    color: rgba(255, 255, 255, 0.892);
+    font-family: arial;
+    font-size: 23px;    
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.20px;
+    margin-left: 27px;
+    padding: 13px 15px;
+    height: 150px;
+    width: 860px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 22px;
+}
+#skill .htmlcss{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 73px;
+}
+#skill .para3{
+    color: rgba(255, 255, 255, 0.892);
+    font-family: arial;
+    font-size: 23px;    
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.20px;
+    margin-left: 30px;
+    padding: 15px 15px;
+    height: 150px;
+    width: 860px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 22px;
+}
+#aboutme{
+background: linear-gradient(rgba(1, 30, 3, 0.751)), url(../assets/aboutmee.jpg) no-repeat center center/cover;
+height: 100vh;
+width: 100%;
+}
+#aboutme .header2{
+    color: #04ACF0;
+    font-family: arial;
+    font-size: 50px;    
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.60px;
+    margin: 0px 0px 0px 90px;
+    padding: 148px 0px 0px 15px;
+}
+#aboutme .aboutpara{
+    color: rgba(255, 255, 255, 0.885);
+    font-family: Montserrat;
+    font-size: 24px;    
+    font-style:normal;
+    font-weight: 400;
+    margin: 0px 0px 0px 90px;
+    padding: 17px 15px;
+    height: 270px;
+    max-width: 760px;
+    background-color: rgba(0, 0, 0, 0.415);
+    border-radius: 22px;
+}
+#aboutme .aboutdata{
+    display: flex;
+    gap: 260px;
+    align-items: center;
+    margin-top: -57px;
+}
+#aboutme .mypic img{
+    max-width: 310px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 
+0 0 91.728px 0 #11925A,
+0 0 30.576px 0 #11925A,
+0 0 2.184px  0 #C2FFF0;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+#aboutme .mypic img:hover{
+    transform: scale(1.1);     
+  filter: brightness(80%); 
+}
+#contact{
+background: linear-gradient(rgba(1, 30, 3, 0.692)), url(../assets/contact.jpg) no-repeat center center/cover;
+height: 100vh;
+width: 100%;
+}
+#contact .header3{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+#contact .contact{
+    color: #fffffffc;
+    font-family: poppins;
+    font-size: 50px;    
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.60px;
+    margin-left: 39%;
+    padding: 10px 15px 0px 0px;
+}
+#contact .me{
+    color: #0de07aee;
+    font-family: poppins;
+    font-size: 50px;    
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.60px;
+    padding: 10px 0px 0px 0px;
+}
+#contact article.contactt{
+    margin-left: 70px;
+}
+#contact article.contactt p{ 
+color: white;
+font-family: poppins;
+font-size: 20px;    
+font-style: normal;
+letter-spacing: 0.010cm;
+}
+#contact .Connect{
+    color:rgba(4, 172, 240, 1);
+    font-size: 35px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    margin-top: 10%;
+}
+#contact ul {
+    display: flex;
+    flex-direction: column; 
+    gap: 25px;
+    margin-top: 110px;
+    margin-left: 63px;
+    list-style: none;
+}
+#contact ul li {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+#contact ul li img {
+    width: 35px;
+    height: 35px;
+}
+#contact ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center; 
+    height: 35px; 
+    line-height: 35px;
+    transition: all 0.3s ease;
+}
+#contact ul li a:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  letter-spacing: 1.2px;
+  transform: scale(1.05);
+}
+#contact .contactcontainer{
+height: 530px;
+width: 480px;
+border-radius: 20px;
+background: linear-gradient(207deg, rgba(13, 91, 61, 0.819) 3.69%, rgba(6, 82, 74, 0.753) 92.12%);
+position: relative;
+margin-left: 61%;
+margin-top: -32%;
+}
+#contact .contactcontainer form .namebox input{
+    color:white;
+    background: transparent;
+    font-family: Montserrat;
+    font-size: 20px;    
+    font-style: normal;
+    letter-spacing: 0.20px;
+    margin-left: 38px;
+    padding: 14px 10px;
+    margin-top: 58px;
+    width: 400px;
+    border: 1px solid #168C6D;
+    border-radius: 12px;
+    letter-spacing: -0.4px;
+}
+#contact .contactcontainer form .namebox input::placeholder{
+    color: rgba(255, 255, 255, 0.79);
+}
+#contact .contactcontainer form .emailbox input{
+    color:white;
+    background: transparent;
+    font-family: Montserrat;
+    font-size: 20px;    
+    font-style: normal;
+    letter-spacing: 0.20px;
+    margin-left: 38px;
+    padding: 14px 10px;
+    margin-top: 52px;
+    width: 400px;
+    border: 1px solid #168C6D;
+    border-radius: 12px;
+    letter-spacing: -0.4px;
+}
+#contact .contactcontainer form .emailbox input::placeholder{
+    color: rgba(255, 255, 255, 0.79);
+}
+#contact .contactcontainer form .messagebox input{
+    color:white;
+    background: transparent;
+    font-family: Montserrat;
+    font-size: 20px;    
+    font-style: normal;
+    letter-spacing: 0.20px;
+    margin-left: 38px;
+    padding: 60px 10px;
+    margin-top: 52px;
+    width: 400px;
+    border: 1px solid #168C6D;
+    border-radius: 12px;
+    letter-spacing: -0.4px;
+}
+#contact .contactcontainer form .messagebox input::placeholder{
+    color: rgba(255, 255, 255, 0.79);
+}
+#contact .contactcontainer .submit button{
+    color: white;
+    background: #04dd74f2;
+    font-family: Montserrat;
+    font-size: 20px;    
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.20px;
+    margin-left: 38px;
+    padding: 12px 25px;
+    margin-top: 40px;
+    width: 401px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#contact .contactcontainer .submit button:hover{
+    background: #04c367;
+    transform: scale(1.01);
+}
