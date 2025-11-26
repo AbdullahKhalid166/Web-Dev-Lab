@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+<body>
+    <script>
+        //map(), filter(), reduce()
+        const numbers = [1, 2, 3, 4, 5];
+        const a = numbers.map(function(num){
+            return num * 3;
+        });
+        document.write(a + "<br>");
+        const b = numbers.filter(num => num > 2);
+        document.write(b);
+
+        document.write("<br>");
+        const c = numbers.reduce(function(total, num){
+            return total + num;
+        }, 0);
+    </script>
+</body>
+</html>

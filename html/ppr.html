@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp" value="inp" placeholder="HTML STANDS FOR?">
+    <button onclick="check()">check</button>
+
+    <p id=" res "></p>
+    <script>
+        function check(){
+            let a= "HyperText Markup Language";
+            let b= document.getElementById("inp").value;
+
+            if(a==b){
+                document.getElementById("res").innerText = alert("Correct");
+            }
+            else{
+                document.getElementById("res").innerText = alert("wrong");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="myparagraph">This is a sample paragraph.</h2>
+    <button onclick="changeColor()">Change Color</button>
+    <script>
+        function changeColor(){
+            document.getElementById("myparagraph").style.color = "blue";
+            document.getElementById("myparagraph").innerHTML = "The color has been changed to blue.";
+        }
+        </script>
+</body>
+</html>

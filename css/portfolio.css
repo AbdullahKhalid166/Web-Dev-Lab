@@ -389,3 +389,11 @@ margin-top: -32%;
     background: #04c367;
     transform: scale(1.01);
 }
+#contact .footer--foot footer p{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.820);
+} 
+

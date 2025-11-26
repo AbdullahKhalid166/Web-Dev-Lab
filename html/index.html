@@ -1,54 +1,91 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title> MY FIRST WEB PAGE </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AK Fragrance — Home</title>
+  <link rel="stylesheet" href="../css/ak.css">
 </head>
-
 <body>
-<marquee style="text-align:center;" scrollamount="5"><h2>Welcome to website</h2></marquee>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">AK Fragrance</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<strong> Abdullah </strong> 
-<br>
-<mark> Section E </mark>
-<br>
-<h4> INFO ABOUT THE SEMESTER </h4> 
-<Ul>
-<li> Semester starts from 15 september </li>
-<li> Semester ends at 8 feb </li>
-</Ul>
-<br>
-<h4> BOOKS TO ENROLL </h4>
-<ol>
-<li> don't give a sh*t </li>
-<li> chase the money </li>
-<li> let it be alone </li>
-</ol>
+  <main>
+    <section class="hero" data-animate>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>AK Fragrance</h2>
+          <p>Curated perfumes. Long-lasting notes. Crafted for every moment.</p>
+          <p><a class="btn" href="products.html">Explore Collection</a></p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="../assets/homee.jpg" alt="Perfume bottle"/>
+        </div>
+      </div>
+    </section>
 
-<h3> RESULTS </h3>
-<table border="2px"> 
-<thead>
-<tr>
-<td> ID </td>
-<td> NAME </td>
-<td> CGPA </td>
-</tr></thead>
-<tbody>
-<tr>
-<td> 1 </td>
-<td> Abdullah </td>
-<td> 3.60 </td>
-</tr>
+    <section class="features container" aria-label="Why choose us">
+      <div class="feature" data-animate>
+        <h3>Premium Ingredients</h3>
+        <p>We source rare accords and high quality essential oils to craft memorable fragrances.</p>
+      </div>
+      <div class="feature" data-animate>
+        <h3>Sustainable</h3>
+        <p>Packaging with recyclable materials and refill options to reduce waste.</p>
+      </div>
+      <div class="feature" data-animate>
+        <h3>Complimentary Samples</h3>
+        <p>Try before you commit — samples included with your first order.</p>
+      </div>
+    </section>
 
-<tr>
-<td> 2 </td>
-<td> Sajawal </td>
-<td> 3.59 </td>
-</tr>
+    <section class="showcase" data-animate>
+      <div class="container">
+        <h3>Best Sellers</h3>
+        <div class="grid">
+          <article class="card">
+            <img src="../assets/v.jpg" alt="Fragrance 1">
+            <h4>Velvet Oud</h4>
+            <p>Warm oud with amber and vanilla.</p>
+          </article>
+          <article class="card">
+            <img src="../assets/c.jpg" alt="Fragrance 2">
+            <h4>Citrus Whisper</h4>
+            <p>Bright citrus and white florals.</p>
+          </article>
+          <article class="card">
+            <img src="../assets/n.jpg" alt="Fragrance 3">
+            <h4>Noir Silk</h4>
+            <p>Smoky woods with iris and musk.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-</table>
-<br>
+    <section class="cta" data-animate>
+      <div class="container">
+        <h3>Join the AK Fragrance Club</h3>
+        <p>Members get early access and exclusive blends.</p>
+        <p><a class="btn" href="contact.html">Join Now</a></p>
+      </div>
+    </section>
+  </main>
 
-<img src="../assests/yellow.jpg" alt="Bottle" height="180px" width="270px">
+  <footer class="site-footer">
+    <div class="container">
+      <small>© AK Fragrance — Crafted with care</small>
+    </div>
+  </footer>
 
+  <script src="../js/ak.js"></script>
 </body>
-
 </html>

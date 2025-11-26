@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    body{
+        background: linear-gradient(rgba(0, 0, 0, 0.592)), url("../assets/contact.jpg");
+    }
+    h2{
+        margin-left: 37.5%;
+        color: rgba(36, 208, 74, 0.932);
+        font-family: Montserrat;
+        font-size: 44px;
+    }
+    form{
+        padding: 50px 30px;
+        background:linear-gradient(rgba(16, 46, 94, 0.599), rgba(61, 26, 111, 0.586));
+        height: 430px;
+        width: 410px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+
+    }
+    .name{
+        color: rgba(255, 255, 255, 0.886);
+        font-family: poppins;
+        font-size: 18px;
+    }
+    .name input{
+        border: 2px solid rgba(28, 164, 58, 0.932);
+        border-radius: 16px;
+        padding: 10px 15px;
+        font-size: 15px;
+        background: transparent;
+    }
+    .email{
+        color: rgba(255, 255, 255, 0.886);
+        font-family: poppins;
+        font-size: 17px;
+        padding-top: 35px;
+        margin-left: 3px;
+    }
+    .email input{
+        border: 2px solid rgba(28, 164, 58, 0.932);
+        border-radius: 16px;
+        padding: 10px 17px;
+        font-size: 15px;
+        background: transparent; 
+    }
+    .email::placeholder{
+        
+        color: rgba(255, 255, 255, 0.886);
+    }
+    .g{
+        margin-top: 20px;   
+    }
+    .i{
+        margin-top: 5px;   
+    }
+    label{
+        color: rgba(255, 255, 255, 0.886);
+        font-family: poppins;
+        font-size: 17px;
+    }
+    .c{
+        margin-top: 5px;
+    }
+.c textarea{
+        border: 2px solid rgba(28, 164, 58, 0.932);
+        border-radius: 16px;
+        padding: 10px 15px;
+        font-size: 15px;
+        background: transparent;
+}
+.c textarea::placeholder{
+    font-family: poppins;
+}
+    article{
+        margin-left: 25px;
+    }
+    form button{
+        margin-top: 15px;
+        border-radius: 12px;
+        padding: 10px 140px;
+        font-family: poppins;
+        font-size: 15px;
+        background-color: rgba(36, 208, 74, 0.932);
+    }
+
+</style>
+<body>
+    <h2>Feedback Form</h2>
+    <br>
+    <article class="page">
+        <form>
+    <div class="name">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="email">
+        <label for="email">Email: </label>
+        <input type="text" id="email" placeholder="Enter you Email" required pattern="[A-Za-z0-9%$@gmail.com]+" maxlength="14">
+    </div>
+    <div class="g">
+    <label for="gender">Gender: </label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male"> Male </label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female"> Female </label>
+    </div>
+    <br>
+<div class="i">
+    <label for="choice"> Interest: </label>
+    <input type="checkbox" id="coding" name="choice" value="coding">
+    <label for=" coding"> Coding </label>
+    <input type="checkbox" id="design" name="choice" value="design">
+    <label for=" design"> Design </label>
+    </div>
+    <br>
+
+    <label for="Experience">Experience Level: </label>
+    <select id="Experience">
+        <option value=" ">Select</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Experienced">Expert</option>
+    </select>
+<br><br>
+<div class="c">
+    <label for="comments"> Comments: </label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Your Feedback..."></textarea>
+    </div>
+    <button class="submit"> Submit Form </button> 
+    </form>
+    <br><br>
+    <audio controls>
+        <source src="../audios/piece of art.mp3" type="audio/mp3">
+        your browser doesn't support, please buy a new one.
+    </audio>
+<br>
+    <video height="300" width="400" controls>
+        <source src="../videos/song vid.mp4" type="video/mp4">
+    </video>
+</article>
+</body>
+</html>

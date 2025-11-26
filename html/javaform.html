@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform" onsubmit="validate()">
+        name: <input type="text" name="username" id="username"><br><br>
+        password: <input type="password" name="password" id="password"><br>
+        <input type="submit" value = "submit">
+
+        <h2 onclick = "this.innerHTML = 'oops' "> click on text </h2>
+
+        <h1 onclick = "changetext(this)"> click here to change text </h1>
+        <script>
+            function changetext(id){
+                id.innerHTML = "text changed";
+            }
+
+            function validate(){
+                let x = document.forms["myform"]["username"].value;
+                if(x == ""){
+                    alert("Name must be filled out");
+                    return false;
+                }
+                else{
+                    alert("successfully submitted");
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

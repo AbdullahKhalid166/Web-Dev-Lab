@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelcomeHub</title>
+</head>
+<body>
+<label for="inputname">Name: </label>
+<input type="text" id="inputname" placeholder="Enter your name">
+<br><br>
+<button id="greetbtn"> Press for Greetings </button>
+<p id="greet"></p>
+<script>
+    function greet(){
+      let username =  document.getElementById("inputname").value;
+      let msg = "Hello, " + username + "Welcome to WelcomeHub!";
+      document.getElementById("greet").innerText=msg;
+    }
+    document.getElementById("greetbtn").addEventListener("click", greet);
+</script>
+</body>
+</html>
