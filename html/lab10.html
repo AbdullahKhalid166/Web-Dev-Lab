@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab 10 - Simple JSON App</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  #controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 200px;
+    outline: none;
+  }
+
+  button {
+    padding: 9px 15px;
+    background: #4A90E2;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background: #357ABD;
+  }
+
+  #output {
+    width: 60%;
+    margin: auto;
+  }
+
+  .card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  .price {
+    color: #4A90E2;
+    font-weight: bold;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: #eee;
+    margin: 10px 0;
+  }
+</style>
+
+<body>
+
+  <h2>Product List</h2>
+
+  <div id="controls">
+  <input type="text" id="searchInput" placeholder="Search product">
+  <button id="searchBtn">Search</button>
+  <button id="sortBtn">Sort by Price</button>
+</div>
+
+  <!-- Where data will show -->
+  <div id="output"></div>
+
+<script>
+const output = document.getElementById("output");
+const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInput");
+const sortBtn = document.getElementById("sortBtn");
+
+let products = [];
+
+// Fetch JSON file
+fetch("p.json").then(res => res.json()).then(data => {
+    products = data;
+    showProducts(products);
+  });
+
+// Function to show products
+function showProducts(list) {
+  output.innerHTML = ""; // clear previous
+
+  list.forEach(p => {
+    output.innerHTML += `
+      <p>
+        <strong>${p.name}</strong><br>
+        Price: $${p.price}<br>
+        Category: ${p.category}
+      </p>
+      <hr>
+    `;
+  });
+}
+
+// Search button
+searchBtn.addEventListener("click", () => {
+  const text = searchInput.value.toLowerCase();
+
+  const filtered = products.filter(p =>
+    p.name.toLowerCase().includes(text)
+  );
+
+  showProducts(filtered);
+});
+
+// Sort button
+sortBtn.addEventListener("click", () => {
+  const sorted = [...products].sort((a, b) => a.price - b.price);
+  showProducts(sorted);
+});
+
+  </script>
+</body>
+</html>

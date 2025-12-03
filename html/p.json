@@ -1,0 +1,6 @@
+[
+  { "name": "Laptop", "price": 1000, "category": "Electronics" },
+  { "name": "Shoes", "price": 50, "category": "Fashion" },
+  { "name": "Watch", "price": 150, "category": "Accessories" },
+  { "name": "Keyboard", "price": 30, "category": "Electronics" }
+]
